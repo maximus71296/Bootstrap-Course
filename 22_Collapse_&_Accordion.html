@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" xmlns:data-mdb-parent="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.dark.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.dark.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.rtl.min.css">
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <title>Bootstrap Collapse & Accordion</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Bootstrap Collapse & Accordion</a>
+</nav>
+
+<!------------ Start Here ------------>
+
+<div class="container mt-5">
+
+    <!-- Bootstrap COllapse -->
+    <h1 class="display3">Collapse</h1>
+    <button class="btn btn-primary" data-mdb-toggle="collapse" data-mdb-target="#blue-card">Click me</button>
+
+    <div class="collapse" id="blue-card">
+        <div class="card">
+            <div class="card-body bg-primary text-white">
+                <h2>Bootstrap Collapse</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dicta dolorem doloremque eaque earum eveniet harum impedit incidunt inventore iure laudantium libero maxime minima, minus, nam necessitatibus nemo nesciunt nihil nostrum odit provident qui quis quo quod reiciendis rerum vitae! Amet error fuga mollitia quibusdam totam! Autem quos, repellendus!</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Accordion -->
+
+    <h1 class="display3">Accordion</h1>
+
+    <div class="accordion" id="question-accordion">
+
+        <!-- Question 1 -->
+
+        <div class="card">
+            <div class="card-header bg-info text-white" data-mdb-toggle="collapse" data-mdb-target="#question-1">
+                <h3>What is Bootstrap?</h3>
+            </div>
+            <div class="collapse" id="question-1" data-mdb-parent="#question-accordion">
+                <div class="card-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, corporis doloremque dolorum facilis fuga harum impedit ipsa quo. Aliquid aut cum cupiditate delectus dolore, eos illo incidunt maiores officiis quaerat rerum voluptatem. A accusamus ad consectetur debitis distinctio dolores ducimus, earum iste quasi quos ratione reprehenderit sequi tempora tenetur voluptates.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+
+        <div class="card">
+            <div class="card-header bg-warning text-white" data-mdb-toggle="collapse" data-mdb-target="#question-2">
+                <h3>What is JQuery?</h3>
+            </div>
+            <div class="collapse" id="question-2" data-mdb-parent="#question-accordion">
+                <div class="card-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, corporis doloremque dolorum facilis fuga harum impedit ipsa quo. Aliquid aut cum cupiditate delectus dolore, eos illo incidunt maiores officiis quaerat rerum voluptatem. A accusamus ad consectetur debitis distinctio dolores ducimus, earum iste quasi quos ratione reprehenderit sequi tempora tenetur voluptates.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+
+        <div class="card">
+            <div class="card-header bg-success text-white" data-mdb-toggle="collapse" data-mdb-target="#question-3">
+                <h3>What is Angular JS?</h3>
+            </div>
+            <div class="collapse" id="question-3" data-mdb-parent="#question-accordion">
+                <div class="card-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, corporis doloremque dolorum facilis fuga harum impedit ipsa quo. Aliquid aut cum cupiditate delectus dolore, eos illo incidunt maiores officiis quaerat rerum voluptatem. A accusamus ad consectetur debitis distinctio dolores ducimus, earum iste quasi quos ratione reprehenderit sequi tempora tenetur voluptates.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+
+        <div class="card">
+            <div class="card-header bg-danger text-white" data-mdb-toggle="collapse" data-mdb-target="#question-4">
+                <h3>What is React JS?</h3>
+            </div>
+            <div class="collapse" id="question-4" data-mdb-parent="#question-accordion">
+                <div class="card-body">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, corporis doloremque dolorum facilis fuga harum impedit ipsa quo. Aliquid aut cum cupiditate delectus dolore, eos illo incidunt maiores officiis quaerat rerum voluptatem. A accusamus ad consectetur debitis distinctio dolores ducimus, earum iste quasi quos ratione reprehenderit sequi tempora tenetur voluptates.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+<!------------ End Here ------------>
+<div style="margin-bottom: 500px"></div>
+
+
+<!----- Bootstrap JS Files ----->
+
+<script src="bootstrap/js/mdb.min.js"></script>
+
+</body>
+</html>
